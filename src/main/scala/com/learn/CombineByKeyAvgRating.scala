@@ -17,7 +17,7 @@ object CombineByKeyAvgRating {
       (acc:(Int,Int),val1) => (acc._1 +val1 ,acc._2+1),
       (acc1:(Int,Int),acc2:(Int,Int)) => (acc1._1+acc2._1,acc2._2+acc2._2)
     )
-    reduced.collect()
+
 
   }
 
