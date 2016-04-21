@@ -18,13 +18,14 @@ object JoinExample {
       ))
     val rdd2= sc.parallelize(Seq(
 
-      ("math",    56),
-      ("math",    100),
+
 
       ("english", 58),
 
       ("science", 54)))
     rdd1.join(rdd2).collect().foreach(println)
+    rdd1.leftOuterJoin(rdd2).collect().foreach(println)
+    rdd1.rightOuterJoin(rdd2).collect().foreach(println)
   }
 
 
