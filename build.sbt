@@ -22,6 +22,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-streaming-kafka" % "1.6.0",
   "org.apache.commons" % "commons-lang3" % "3.0",
   "org.apache.spark" %% "spark-streaming-twitter" % "1.6.0",
+  "org.apache.spark" % "spark-sql_2.10" % "1.6.0",
   "com.google.code.gson" % "gson" % "2.3.1"
 
 )
