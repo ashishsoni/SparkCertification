@@ -113,7 +113,7 @@
     }
   ],
   "Blueprints": {
-    "blueprint_name": "hdp-yarn-spark",
+    "blueprint_name": "multi-node-spark",
     "stack_name": "HDP",
     "stack_version": "2.5"
   }
