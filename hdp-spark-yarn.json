@@ -20,14 +20,14 @@
         },
         {
           "name": "ZOOKEEPER_SERVER"
-        }, 
-        {
-          "name" : "METRICS_COLLECTOR"
         },
         {
-          "name" : "METRICS_MONITOR"
+          "name": "METRICS_COLLECTOR"
+        },
+        {
+          "name": "METRICS_MONITOR"
         }
-    ],
+      ],
       "cardinality": "1"
     },
     {
@@ -52,14 +52,68 @@
           "name": "ZOOKEEPER_CLIENT"
         },
         {
-          "name" : "METRICS_MONITOR"
+          "name": "METRICS_MONITOR"
+        }
+      ],
+      "cardinality": "1+"
+    },
+    {
+      "name": "slave_2",
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        }
+      ],
+      "cardinality": "1+"
+    },
+    {
+      "name": "slave_3",
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "METRICS_MONITOR"
         }
       ],
       "cardinality": "1+"
     }
   ],
   "Blueprints": {
-    "blueprint_name": "spark-hdfs-yarn",
+    "blueprint_name": "hdp-yarn-spark",
     "stack_name": "HDP",
     "stack_version": "2.5"
   }
