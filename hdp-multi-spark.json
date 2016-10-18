@@ -59,7 +59,7 @@
     }
   ],
   "Blueprints": {
-    "blueprint_name": "hdp-spark-hdfs-yarn",
+    "blueprint_name": "hdp-spark-yarn",
     "stack_name": "HDP",
     "stack_version": "2.5"
   }
